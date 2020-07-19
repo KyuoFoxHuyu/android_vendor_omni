@@ -118,3 +118,10 @@ PRODUCT_COPY_FILES += \
 
 # Add our overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/common
+
+# Additional recovery keys for zip verification
+PRODUCT_EXTRA_RECOVERY_KEYS := \
+    vendor/omni/build/target/product/security/lineage \
+    vendor/omni/build/target/product/security/magisk \
+    vendor/omni/build/target/product/security/omni \
+    vendor/omni/build/target/product/security/opengapps
